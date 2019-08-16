@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    line-height: 1.65;
+}
+
+body {
+    background-color: lightgray;
+    height: 100%;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    overflow: hidden;
+    margin: -10px;
+    font-size: 20px;
+}
+
+nav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav div {
+    float: left;
+    position: relative;
+    left: 30px;
+    background-color: orangered;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: orange;
+}
+
+
+/* Add banner to navigation bar*/
+
+nav a.banner {
+    background-color: orangered;
+    left: 50px;
+    color: white;
+}
+
+section {
+    background-color: dimgray;
+    padding: 10px 10px;
+    margin: 50px;
+}
+
+.aboutme {
+    min-height: 320px;
+    /*prevent text from overflowing below section*/
+    min-width: 500px;
+    /*prevent section overstretching*/
+    font-size: 18px;
+}
+
+.contactform {
+    height: 100%;
+    min-height: 320px;
+    /*prevent text from overflowing below section*/
+    min-width: 500px;
+    /*prevent section overstretching*/
+}
+
+input {
+    width: 100%;
+}
+
+#messagebox {
+    min-height: 200px;
+}
+
+.sendit {
+    background-color: orangered;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+}
+
+
+/*Profile Pics*/
+
+.avatar {
+    object-fit: cover;
+    float: left;
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+    padding: 5px 5px;
+    margin: 10px;
+}
+
+.portfolio {
+    /*no styling for now*/
+}
+
+.portfolio img {
+    position: relative;
+    left: 10%;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    margin-left: 5%;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.project {
+    width: 200px;
+    height: 250px;
+    float: left;
+    border: 5px;
+    border-color: #333;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15px
+}
+
+.label-box {
+    position: relative;
+    bottom: 20%;
+    left: 15%;
+    width: 100%;
+    background-color: orangered;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
